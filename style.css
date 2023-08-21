@@ -2,14 +2,14 @@
     --header-height:4rem;
     --first-color:hsl(176,88%,27%);
     --first-color-alt:hsl(176,88%,27%);
-    --second-color:hsl(129,44%,94%);
+    --second-color:hsl(120, 1%, 21%);
     --title-color:hsl(0,0%,13%);
     --text-color:hsl(154,13%,32%);
     --text-color-light:hsl(60,1%,56%);
     --body-color:hsl(0,0%,100%);
     --container-color:hsl(0,0%,93%);
     --border-color:hsl(129,36%,85%);
-    --boder-color-alt:hsl(113,15%,90%);
+    --border-color-alt:hsl(120, 30%, 49%);
 
     --body-font:'Lato',sans-serif;
     --second-font:League Spartan,sans-serif;
@@ -48,6 +48,7 @@ input,textarea,body{
 }
 body{
     background-color: var(--body-color);
+    padding:1%;
 }
 h1,h2,h3,h4{
     font-family: var(--second-font);
@@ -88,7 +89,7 @@ column-gap: 1rem;;
 
 }
 .nav-list{
-    margin-left: auto;
+    margin-right: auto;
     column-gap:2.5rem ;
 }
 .nav-link{
@@ -100,4 +101,88 @@ nav-logo-img{
     width:150px;
 }
 
-
+.active-link,.nav-link:hover{
+    color: var(--first-color);
+}
+.header-search{
+    width:340px;
+    position: relative;
+}
+.search-btn{
+    position:absolute;
+    top:24%;
+    right:1.25rem;
+    cursor:pointer;
+}
+.header-search .form-input{
+    width:100%;
+}
+.form-input{
+border:1px solid var(--border-color-alt);
+padding-inline:1rem;
+height:45px;
+border-radius:.25rem;
+font-size:var(--small-font-size)
+}
+.header-user-action{
+    column-gap: 1.25rem;}
+.header-action-btn{
+    position:relative;
+}    
+.header-action-btn img{
+    width:30px;
+}
+.grid{
+    display:grid;
+    gap:1.5rem;
+}
+.section--lg{
+    padding-block:4rem;
+}
+.home-container{
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+}
+.home-subtitile,.home-description{
+    font-size:var(--large-font-size);
+}
+.home-subtitle{
+    font-family: var(--second-color);
+    font-weight: var(--weight-600);
+    margin-bottom: 1rem;
+    display:block;
+}
+.home-title{
+    font-size: var(--h1-font-size);
+    font-weight:var(--weight-700);
+    line-height:1.4;
+}
+.home-title span{
+    color:var(--first-color);
+    font-size:var(--big-font-size);
+}
+.home-description{
+    margin-block:.5rem 2rem;
+}
+.home-img{
+    justify-self: flex-end;
+}
+.btn{
+    display:inline-block;
+    background-color:var(--first-color);
+    border:2px solid var(--first-color);
+    color:var(--body-color);
+    padding-inline:1.75rem;
+    height:49px;
+    line-height: 49px;
+    border-radius: .25rem;
+    font-family: var(--second-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-700);
+    transition:all 0.4s var(--transition);
+    
+}
+.btn:hover{
+    background-color: transparent;
+    color:var(--first-color);
+}
