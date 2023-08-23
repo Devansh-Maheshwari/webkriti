@@ -211,3 +211,13 @@ font-size:var(--small-font-size)
 .category_title {
     text-align: center;
 }
+
+.login_box {
+    padding: 16px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
