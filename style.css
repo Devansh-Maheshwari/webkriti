@@ -186,3 +186,28 @@ font-size:var(--small-font-size)
     background-color: transparent;
     color:var(--first-color);
 }
+
+/*          Product Categories              */
+
+.category_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.category_item {
+    flex-basis: 250px;
+}
+
+.category_image {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.category_title {
+    text-align: center;
+}
