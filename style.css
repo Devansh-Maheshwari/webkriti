@@ -198,6 +198,10 @@ font-size:var(--small-font-size)
 
 .category_item {
     flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 .category_image {
